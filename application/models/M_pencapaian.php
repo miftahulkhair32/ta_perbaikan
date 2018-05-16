@@ -17,7 +17,7 @@ class M_pencapaian extends CI_Model {
         $op = ['user'=>$dataPencapaian['user'],'bulan'=>$dataPencapaian['bulan']];
         if($this->db->get_where('pencapaian',$op)->num_rows()>0){
             $this->session->set_flashdata('info','<div class="alert alert-warning"><strong>Peringatan!!</strong> Anda Sudah MengInput Pencapaian Bulan Ini</div>');
-            $this->session->set_flashdata('info1','<div class="alert alert-info"><strong>Catatan !!</strong> Jika Ingin memperbaiki Data Inputan Bulan Ini Hubungi Pengasuhan </div>');
+            $this->session->set_flashdata('info1','<div class="alert alert-info"><strong>Catatan !!</strong> Jika Ingin memperbaiki Data Masuk Bagian Edit </div>');
             redirect('home');
         }
         return $this->db->insert('pencapaian',$dataPencapaian);

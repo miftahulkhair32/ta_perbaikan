@@ -8,7 +8,7 @@
     Selamat Datang ke
     <strong class="green">
         Aplikasi Form Terpadu MahaSantri PeTIK
-        <small>(Beta.v0.1)</small>
+        <small>(Beta.v0.5)</small>
     </strong>
     , Pesantren Teknologi Informasi dan Komunikasi
 </div>

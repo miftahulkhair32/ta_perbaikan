@@ -74,8 +74,8 @@ class M_observasi extends CI_Model {
         }
         $this->db->select('user.nama as nama,observasi.bulan as bulan,'.$r.',pelanggaran.total as total,observasi.id');
         $this->db->from('user');
-        $this->db->join('observasi','user.nama = observasi.nama','left');
-        $this->db->join('pelanggaran','user.nama = pelanggaran.nama and observasi.bulan = pelanggaran.bulan','left');
+        $this->db->join('observasi','user.id = observasi.user','left');
+        $this->db->join('pelanggaran','user.id = pelanggaran.user and observasi.bulan = pelanggaran.bulan','left');
         $this->db->where($ty);
         $ui = $this->db->get();
         return $ui;

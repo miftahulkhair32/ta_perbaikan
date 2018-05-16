@@ -61,8 +61,8 @@ class M_user extends CI_Model {
     }
 
     public function data_pro(){
-        $up = $this->session->userdata('nama');
-        $this->db->where('nama',$up);
+        $up = $this->session->userdata('id');
+        $this->db->where('id',$up);
         return $this->db->get('user');
     }
 
@@ -73,7 +73,7 @@ class M_user extends CI_Model {
         $this->db->where('username',$nam);
         $da = $this->db->get('user')->row_array();
         unlink("./foto/".$da['foto']);
-        $this->db->where('nama',$da['nama']);
+        $this->db->where('id',$da['id']);
         return $this->db->delete('user');
     }
 
@@ -81,21 +81,21 @@ class M_user extends CI_Model {
         $nam = $this->uri->segment(3);
         $dat = $this->db->where('username',$nam)->get('user')->row_array();
         unlink("./foto/".$dat['foto']);
-        $this->db->where('nama',$dat['nama']);
+        $this->db->where('user',$dat['id']);
         $this->db->delete('pelanggaran');
-        $this->db->where('nama',$dat['nama']);
+        $this->db->where('user',$dat['id']);
         $this->db->delete('pencapaian');
-        $this->db->where('nama',$dat['nama']);
+        $this->db->where('user',$dat['id']);
         $this->db->delete('tahfizh');
-        $this->db->where('nama',$dat['nama']);
+        $this->db->where('user',$dat['id']);
         $this->db->delete('observasi');
-        $this->db->where('nama',$dat['nama']);
+        $this->db->where('id',$dat['id']);
         return $this->db->delete('user');
     }
 
     public function edit_san(){
-        $sak = $this->session->userdata('nama');
-        $this->db->where('nama',$sak);
+        $sak = $this->session->userdata('id');
+        $this->db->where('id',$sak);
         return $this->db->get('user');
     }
 
@@ -103,15 +103,15 @@ class M_user extends CI_Model {
         $wer = $this->input->post('passlama');
         $www = $this->input->post('password');
         $wew = $this->input->post('passconf');
-        $klo = $this->session->userdata('nama');
+        $klo = $this->session->userdata('id');
         if($wer && ($www || $wew) != null){
-            $this->db->where('nama',$klo);
+            $this->db->where('id',$klo);
             $cop = $this->db->get('user')->row_array();
             if(hash_verified($wer,$cop['password'])){
                 $bj = [
                     'password'  =>  get_hash($www)
                 ];
-                $this->db->where('nama',$klo);
+                $this->db->where('id',$klo);
                 $this->db->update('user',$bj);
             } else {
                 $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Maaf Password Lama SALAH !!!</div>');
@@ -124,27 +124,27 @@ class M_user extends CI_Model {
         $this->upload->do_upload('foto');
         $pop = $this->upload->data('is_image');
         if($pop != 0){
-            $this->db->where('nama',$klo);
+            $this->db->where('id',$klo);
             $cop = $this->db->get('user')->row_array();
             unlink("./foto/".$cop['foto']);
             $gh = [
                 'foto'  =>  $this->upload->data('file_name')
             ];
-            $this->db->where('nama',$klo);
+            $this->db->where('id',$klo);
             $this->db->update('user',$gh);
         }
         $nom = [
             'username'  =>  $this->input->post('username'),
             'email'     =>  $this->input->post('email')
         ];
-        $this->db->where('nama',$klo);
+        $this->db->where('id',$klo);
         return $this->db->update('user',$nom);
     }
 
     public function pro_ed_men(){
         $this->load->dbforge();
         $nm = $this->input->post('username');
-        $this->db->where('nama',$this->session->userdata('nama'));
+        $this->db->where('id',$this->session->userdata('id'));
         $cop = $this->db->get('user')->row_array();
         if($nm != $cop['username']){
             $lol = [
@@ -160,9 +160,9 @@ class M_user extends CI_Model {
 
     public function proses_edit_mod(){
         $this->load->dbforge();
-        $a = $this->input->post('namalama');
+        $a = $this->input->post('id');
         $c = $this->input->post('username');
-        $this->db->where('nama',$a);
+        $this->db->where('id',$a);
         $rt = $this->db->get('user')->row_array();
         if($c != $rt['username']){
             $lol = [
@@ -177,17 +177,15 @@ class M_user extends CI_Model {
     }
 
     public function proses_edit_run(){
-        $a = $this->input->post('namalama');
-        $this->db->where('nama',$a);
-        $jiji = $this->db->get('user')->row_array();
-        $k = $jiji['id'];
+        $a = $this->input->post('id');
         $data = [
+            'nama'      =>  $this->input->post('nama'),
             'nim'       =>  $this->input->post('nim'),
             'username'  =>  $this->input->post('username'),
             'email'     =>  $this->input->post('email'),
             'daerah'    =>  $this->input->post('daerah')
         ];
-        $this->db->where('id',$k);
+        $this->db->where('id',$a);
         return $this->db->update('user',$data);
     }
 }

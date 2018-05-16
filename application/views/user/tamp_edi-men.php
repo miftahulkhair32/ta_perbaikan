@@ -15,7 +15,18 @@ if(!empty($info)){
 
         <?= form_open('user/proses_edit_men',['class'=>'form-horizontal']) ?>
 
-        <?= form_hidden('namalama',$data['nama']) ?>
+        <?= form_hidden('id',$data['id']) ?>
+
+        <div class="form-group">
+            <?= form_label('Nama','nama',['class'=>'col-sm-2 control-label no-padding-right']) ?>
+            <label class="block clearfix col-xs-4">
+                <span class="block input-icon input-icon-right">
+                    <?= form_input('nama',$data['nama'],['class'=>'form-control','id'=>'nama','placeholder'=>'Nama Lengkap']) ?>
+                    <i class="ace-icon fa fa-user"></i>
+                </span>
+            </label>
+            <?= form_error('nama','<div class="text-danger"><small>','</small></div>') ?>
+        </div>
 
         <div class="form-group">
             <?= form_label('Nim','nim',['class'=>'col-sm-2 control-label no-padding-right']) ?>

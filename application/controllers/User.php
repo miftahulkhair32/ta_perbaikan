@@ -225,6 +225,7 @@ class User extends CI_Controller {
     }
 
     public function proses_edit_men(){
+        $this->form_validation->set_rules('nama','Nama','trim|required|min_length[3]');
         $this->form_validation->set_rules('nim','Nim','trim|min_length[7]|max_length[13]');
         $this->form_validation->set_rules('daerah','Asal Daerah','trim|required');
         $this->form_validation->set_rules('username','Username','trim|required|min_length[3]|max_length[33]');
@@ -234,8 +235,8 @@ class User extends CI_Controller {
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit User <strong> GAGAL !! </strong> </div>');
             redirect('home');
         } else {
-            $hg = $this->input->post('namalama');
-            $this->db->where('nama',$hg);
+            $hg = $this->input->post('id');
+            $this->db->where('id',$hg);
             $rt = $this->db->get('user')->row_array();
             if($rt['status'] == 'menejemen'){
                 if($this->m_user->proses_edit_run() == FALSE){
