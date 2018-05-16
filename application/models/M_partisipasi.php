@@ -10,7 +10,7 @@ class M_partisipasi extends CI_Model {
 
     public function input(){
         $data = [
-            'nama'          =>  $this->input->post('nama'),
+            'user'          =>  $this->input->post('user'),
             'bulan'         =>  $this->input->post('bulan'),
             'hadir1'        =>  $this->input->post('hadir1'),
             'lambat1'       =>  $this->input->post('lambat1'),
@@ -31,7 +31,7 @@ class M_partisipasi extends CI_Model {
             'keterangan'    =>  $this->input->post('keterangan'),
             'total'         =>  $this->input->post('total')
         ];
-        $cek = ['nama'=>$data['nama'],'bulan'=>$data['bulan']];
+        $cek = ['user'=>$data['user'],'bulan'=>$data['bulan']];
         if($this->db->get_where('partisipasi',$cek)->num_rows()>0){
             $this->session->set_flashdata('info','<div class="alert alert-warning"><strong>Peringatan!!</strong> Anda Sudah MengInput Partisipasi Program Bulan Ini</div>');
             $this->session->set_flashdata('info1','<div class="alert alert-info"><strong>Catatan !!</strong> Jika Ingin memperbaiki Data Inputan Bulan Ini Hubungi Pengasuhan </div>');
@@ -45,7 +45,7 @@ class M_partisipasi extends CI_Model {
         $ty = ['bulan'=>$dc,'status'=>'santri'];
         $this->db->select('partisipasi.id as id,user.nama as nama,partisipasi.bulan as bulan,partisipasi.total,partisipasi.lambat1,partisipasi.lambat2,partisipasi.lambat3,partisipasi.lambat4,partisipasi.tidak1,partisipasi.tidak2,partisipasi.tidak3,partisipasi.tidak4,partisipasi.kurang1,partisipasi.kurang2,partisipasi.kurang3,partisipasi.kurang4,partisipasi.keterangan');
         $this->db->from('user');
-        $this->db->join('partisipasi','user.nama = partisipasi.nama','left');
+        $this->db->join('partisipasi','user.id = partisipasi.user','left');
         $this->db->where($ty);
         return $this->db->get();
     }

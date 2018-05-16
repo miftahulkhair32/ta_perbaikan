@@ -22,8 +22,8 @@ class M_observasi extends CI_Model {
         $no     =   $this->input->post('no');
         
         while ($no > 0) {
-            $ui =   $this->input->post('nama'.$no);
-            $bu =   ['nama'=>$ui,'bulan'=>$bln];
+            $ui =   $this->input->post('user'.$no);
+            $bu =   ['user'=>$ui,'bulan'=>$bln];
             $this->db->where($bu);
             $this->db->from('observasi');
             $mn =   $this->db->get()->num_rows();
@@ -31,12 +31,12 @@ class M_observasi extends CI_Model {
                 $datup = [
                     $men    =>  $this->input->post('total'.$no),
                 ];
-                $this->db->where('nama',$ui);
+                $this->db->where('user',$ui);
                 $this->db->where('bulan',$bln);
                 $kl = $this->db->update('observasi',$datup);
             } else {
                 $dataObs = [
-                    'nama'      =>  $ui,
+                    'user'      =>  $ui,
                     'bulan'     =>  $bln,
                     $men        =>  $this->input->post('total'.$no),
                 ];
