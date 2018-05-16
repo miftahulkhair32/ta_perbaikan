@@ -443,7 +443,7 @@
                             </td>
                         </tr>
                         <?= form_hidden('bulan',$bulan) ?>
-                        <?= form_hidden('nama',$this->session->userdata('nama')) ?>
+                        <?= form_hidden('user',$this->session->userdata('id')) ?>
                     </tbody>
                 </table>
                 <div>

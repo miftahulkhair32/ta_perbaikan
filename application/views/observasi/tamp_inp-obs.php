@@ -91,7 +91,7 @@
                             <?= form_input('total'.$no,'',['class'=>'input-mini','readonly'=>'true','id'=>'tot'.$no]) ?>
                         </td>
                     </tr>
-                    <?= form_hidden('nama'.$no,$sa->nama) ?>
+                    <?= form_hidden('user'.$no,$sa->id) ?>
                     <?= form_hidden('no',$no) ?>
                     <script>
                         $(document).ready(function(){

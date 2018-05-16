@@ -9,7 +9,7 @@ class M_observasi extends CI_Model {
     }
 
     public function santri(){
-        $this->db->select('nama');
+        $this->db->select('id,nama');
         $this->db->where('status','santri');
         $this->db->order_by('nama','ASC');
         $tu = $this->db->get('user');

@@ -87,6 +87,7 @@ class User extends CI_Controller {
                     */
                     $sess = [
                         'login'     =>  TRUE,
+                        'id'        =>  $db->id,
                         'nama'      =>  $db->nama,
                         'username'  =>  $db->username,
                         'email'     =>  $db->email,
@@ -109,6 +110,7 @@ class User extends CI_Controller {
 
     public function logout(){
         $this->session->unset_userdata('login');
+        $this->session->unset_userdata('id');
         $this->session->unset_userdata('nama');
         $this->session->unset_userdata('username');
         $this->session->unset_userdata('email');

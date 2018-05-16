@@ -34,7 +34,7 @@ class M_partisipasi extends CI_Model {
         $cek = ['user'=>$data['user'],'bulan'=>$data['bulan']];
         if($this->db->get_where('partisipasi',$cek)->num_rows()>0){
             $this->session->set_flashdata('info','<div class="alert alert-warning"><strong>Peringatan!!</strong> Anda Sudah MengInput Partisipasi Program Bulan Ini</div>');
-            $this->session->set_flashdata('info1','<div class="alert alert-info"><strong>Catatan !!</strong> Jika Ingin memperbaiki Data Inputan Bulan Ini Hubungi Pengasuhan </div>');
+            $this->session->set_flashdata('info1','<div class="alert alert-info"><strong>Catatan !!</strong> Jika Ingin memperbaiki Data Masuk Bagian Edit</div>');
             redirect('home');
         }
         return $this->db->insert('partisipasi',$data);

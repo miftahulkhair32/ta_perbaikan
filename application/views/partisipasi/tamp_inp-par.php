@@ -25,7 +25,7 @@
                             <th class="center">Kurang</th>
                         </tr>
                     </thead>
-                    <?= form_hidden('nama',$this->session->userdata('nama')) ?>
+                    <?= form_hidden('user',$this->session->userdata('id')) ?>
                     <?= form_hidden('bulan',$bulan) ?>
                     <tbody>
                         <tr>
