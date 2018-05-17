@@ -11,7 +11,7 @@
     <?php if($this->session->userdata('status')=='menejemen') : ?>
         <li class="">
             <a href="<?= base_url('index.php/laporan'); ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Laporan Utama
             </a>
             <b class="arrow"></b>
@@ -19,7 +19,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/pelanggaran/cek') ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Pelanggaran
             </a>
 
@@ -28,7 +28,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/partisipasi/cek') ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Partisipasi
             </a>
 
@@ -37,7 +37,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/pencapaian/cek') ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Pencapaian
             </a>
 
@@ -46,7 +46,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/artikel/cek') ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Artikel
             </a>
 
@@ -55,7 +55,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/hapalan/cek') ?>">
-                <i class="menu-icon fa fa-book red"></i>
+                <i class="menu-icon fa fa-book"></i>
                 Tahfizh
             </a>
 
@@ -123,12 +123,10 @@
             </li>
         </ul>
     </li>
-    <?php endif; ?>
-
-    <?php if($this->session->userdata('status') != 'menejemen') : ?>
+    <?php else : ?>
         <li class="">
             <a href="<?= base_url('index.php/partisipasi') ?>">
-                <i class="menu-icon fa fa-pencil orange"></i>
+                <i class="menu-icon fa fa-circle"></i>
                 Partisipasi Program
             </a>
 
@@ -137,7 +135,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/pencapaian') ?>">
-                <i class="menu-icon fa fa-pencil orange"></i>
+                <i class="menu-icon fa fa-circle"></i>
                 Pencapaian Target
             </a>
 
@@ -146,7 +144,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/hapalan'); ?>">
-                <i class="menu-icon fa fa-pencil orange"></i>
+                <i class="menu-icon fa fa-circle"></i>
                 Tahfizh
             </a>
 
@@ -155,7 +153,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/pelanggaran') ?>">
-                <i class="menu-icon fa fa-pencil orange"></i>
+                <i class="menu-icon fa fa-circle"></i>
                 Pelanggaran
             </a>
 
@@ -164,7 +162,7 @@
 
         <li class="">
             <a href="<?= base_url('index.php/artikel') ?>">
-                <i class="menu-icon fa fa-pencil orange"></i>
+                <i class="menu-icon fa fa-circle"></i>
                 Artikel
             </a>
 

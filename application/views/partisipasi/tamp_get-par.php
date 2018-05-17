@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12">
-        <h3 class="header smaller lighter blue">Laporan Form Pelanggaran</h3>
+        <h3 class="header smaller lighter blue">Laporan Form Partisipasi</h3>
         <?php $info = $this->session->flashdata('info');
         if(!empty($info)){
             echo $info;

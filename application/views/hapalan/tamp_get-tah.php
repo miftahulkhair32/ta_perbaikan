@@ -54,7 +54,7 @@
                             <?php if($da->tgl1 != '0000-00-00' && $da->salah1 != '0') : ?>
                             <td class="center"><?= $da->tgl1 ?></td>
                             <td class="center"><?= $da->salah1 ?></td>
-                            <td class="center"><?= $da->lancar1 ?></td>
+                            <td class="center"><?= $da->tajw1 ?></td>
                             <td class="center"><?= $da->makna1 ?></td>
                             <?php endif; ?>
                             <td rowspan="9" class="center">
@@ -72,7 +72,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl2 ?></td>
                             <td class="center"><?= $da->salah2 ?></td>
-                            <td class="center"><?= $da->lancar2 ?></td>
+                            <td class="center"><?= $da->tajw2 ?></td>
                             <td class="center"><?= $da->makna2 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -80,7 +80,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl3 ?></td>
                             <td class="center"><?= $da->salah3 ?></td>
-                            <td class="center"><?= $da->lancar3 ?></td>
+                            <td class="center"><?= $da->tajw3 ?></td>
                             <td class="center"><?= $da->makna3 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -88,7 +88,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl4 ?></td>
                             <td class="center"><?= $da->salah4 ?></td>
-                            <td class="center"><?= $da->lancar4 ?></td>
+                            <td class="center"><?= $da->tajw4 ?></td>
                             <td class="center"><?= $da->makna4 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -96,7 +96,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl5 ?></td>
                             <td class="center"><?= $da->salah5 ?></td>
-                            <td class="center"><?= $da->lancar5 ?></td>
+                            <td class="center"><?= $da->tajw5 ?></td>
                             <td class="center"><?= $da->makna5 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -104,7 +104,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl6 ?></td>
                             <td class="center"><?= $da->salah6 ?></td>
-                            <td class="center"><?= $da->lancar6 ?></td>
+                            <td class="center"><?= $da->tajw6 ?></td>
                             <td class="center"><?= $da->makna6 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -112,7 +112,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl7 ?></td>
                             <td class="center"><?= $da->salah7 ?></td>
-                            <td class="center"><?= $da->lancar7 ?></td>
+                            <td class="center"><?= $da->tajw7 ?></td>
                             <td class="center"><?= $da->makna7 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -120,7 +120,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl8 ?></td>
                             <td class="center"><?= $da->salah8 ?></td>
-                            <td class="center"><?= $da->lancar8 ?></td>
+                            <td class="center"><?= $da->tajw8 ?></td>
                             <td class="center"><?= $da->makna8 ?></td>
                         </tr>
                         <?php endif; ?>
@@ -128,7 +128,7 @@
                         <tr>
                             <td class="center"><?= $da->tgl9 ?></td>
                             <td class="center"><?= $da->salah9 ?></td>
-                            <td class="center"><?= $da->lancar9 ?></td>
+                            <td class="center"><?= $da->tajw9 ?></td>
                             <td class="center"><?= $da->makna9 ?></td>
                         </tr>
                         <?php endif; ?>
