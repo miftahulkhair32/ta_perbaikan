@@ -18,9 +18,8 @@
                     <thead>
                         <tr>
                             <th class="center">Tanggal</th>
-                            <th class="center">Jumlah Halaman Terakhir</th>
-                            <th class="center">Kesalahan</th>
-                            <th class="center">Kelancaran</th>
+                            <th class="center">Hafalan</th>
+                            <th class="center">Tajwid</th>
                             <th class="center">Makna</th>
                             <th class="center">Jumlah</th>
                         </tr>
@@ -30,9 +29,6 @@
                         <tr>
                             <td class="center">
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl1" value="<?= $data['tgl1'] ?>">
-                            </td>
-                            <td class="center">
-                                <?= form_input('halam',$data['halaman'],['class'=>'col-xs-12']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('kesalahan1',$data['salah1'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i1']) ?>
@@ -52,9 +48,6 @@
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl2" value="<?= $data['tgl2'] ?>">
                             </td>
                             <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
-                            </td>
-                            <td class="center">
                                 <?= form_input('kesalahan2',$data['salah2'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i2']) ?>
                             </td>
                             <td class="center">
@@ -70,9 +63,6 @@
                         <tr>
                             <td class="center">
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl3" value="<?= $data['tgl3'] ?>">
-                            </td>
-                            <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('kesalahan3',$data['salah3'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i3']) ?>
@@ -92,9 +82,6 @@
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl4" value="<?= $data['tgl4'] ?>">
                             </td>
                             <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
-                            </td>
-                            <td class="center">
                                 <?= form_input('kesalahan4',$data['salah4'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i4']) ?>
                             </td>
                             <td class="center">
@@ -110,9 +97,6 @@
                         <tr>
                             <td class="center">
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl5" value="<?= $data['tgl5'] ?>">
-                            </td>
-                            <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('kesalahan5',$data['salah5'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i5']) ?>
@@ -132,9 +116,6 @@
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl6"  value="<?= $data['tgl6'] ?>">
                             </td>
                             <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
-                            </td>
-                            <td class="center">
                                 <?= form_input('kesalahan6',$data['salah6'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i6']) ?>
                             </td>
                             <td class="center">
@@ -150,9 +131,6 @@
                         <tr>
                             <td class="center">
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl7" value="<?= $data['tgl7'] ?>">
-                            </td>
-                            <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('kesalahan7',$data['salah7'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i7']) ?>
@@ -172,9 +150,6 @@
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl8" value="<?= $data['tgl8'] ?>">
                             </td>
                             <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
-                            </td>
-                            <td class="center">
                                 <?= form_input('kesalahan8',$data['salah8'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i8']) ?>
                             </td>
                             <td class="center">
@@ -192,9 +167,6 @@
                                 <input class="from-control date-picker col-xs-12" type="date" name="tgl9" value="<?= $data['tgl9'] ?>">
                             </td>
                             <td class="center">
-                                <?= form_input('','',['class'=>'col-xs-12']) ?>
-                            </td>
-                            <td class="center">
                                 <?= form_input('kesalahan9',$data['salah9'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i9']) ?>
                             </td>
                             <td class="center">
@@ -205,6 +177,12 @@
                             </td>
                             <td class="center">
                                 <?= form_input('','',['class'=>'input-mini','disabled'=>'disabled','id'=>'i9','rel'=>'e']) ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">Jumlah Halaman Yang di Hafal Terakhir</td>
+                            <td colspan="3" class="center">
+                                <?= form_input('halam',$data['halaman'],['class'=>'col-xs-12']) ?>
                             </td>
                         </tr>
                         <tr>
