@@ -39,7 +39,7 @@
                             <td>Program Harian</td>
                             <td>Mengikuti seluruh kegiatan harian tanpa terlambat</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na1','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -48,7 +48,7 @@
                             <td>Program Pekanan</td>
                             <td>Mengikuti seluruh kegiatan pekanan tanpa terlambat</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na2','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -57,7 +57,7 @@
                             <td>Program Bulanan</td>
                             <td>Mengikuti seluruh kegiatan bulanan tanpa terlambat</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na3','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -66,25 +66,29 @@
                             <td>Program Tahunan</td>
                             <td>Mengikuti seluruh kegiatan tahunan tanpa terlambat</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na4','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td class="center">B</td>
                             <td></td>
                             <td><strong>Tahsin Tilawah</strong></td>
-                            <td>Menguasai bacaan Mad</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('b1','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nb1','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td class="center">C</td>
                             <td></td>
                             <td><strong>Tahfidz Qur'an</strong></td>
-                            <td>Hafal minimal 5 hal & paham maknanya</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('c1','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nc1','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -101,9 +105,11 @@
                             <td></td>
                             <td></td>
                             <td>Allah dulu, allah lagi, allah terus dalam segala aktivitas</td>
-                            <td>Bedo'a dulu, ikhtiar maksimal, tawakal berserah diri, dan terus berharap kepada allah dalam melakukan segala aktivitas</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d1a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd1a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -115,36 +121,44 @@
                             <td></td>
                             <td></td>
                             <td>Shalat</td>
-                            <td>Memahami dan mengerti cara shalat yang benar dan paham bacaannya</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d2a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd2a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td>Shaum</td>
-                            <td>Paham keutamaan shaum sunnah & melaksanakan shaum tiap senin kamis</td>
+                            <td>Puasa</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d2b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd2b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Tilawah & Tadabbur Qur'an</td>
-                            <td>Tilawah 4 Juz Per bulan & membaca terjemahnya</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d2c','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd2c','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Dzikir dan Muhasabah</td>
-                            <td>Hafal bacaan dzikir setelah shalat fardhu & Intropeksi diri tiap malam</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d2d','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd2d','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -156,54 +170,66 @@
                             <td></td>
                             <td></td>
                             <td>Adab Muamalah</td>
-                            <td>Salam, sapa, senyum, menolong dan berbagi</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Kewarganegaraan</td>
-                            <td>Mengetahui ragam budaya daerah teman petik</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Penampilan Diri</td>
-                            <td>Rapih, sopan dan wangi</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3c','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3c','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Adab Makan</td>
-                            <td>Memperaktekan cara makan rasulullah</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3d','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3d','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Adab Tidur</td>
-                            <td>Memperaktekan cara tidur rasulullah</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3e','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3e','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Adab Di Kamar Mandi</td>
-                            <td>Memperaktekan cara mandi dan bersuci rasulullah</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d3f','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd3f','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -215,18 +241,22 @@
                             <td></td>
                             <td></td>
                             <td>OLAHRAGA</td>
-                            <td>tiap pagi olah raga 10 menit</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d4a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd4a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>KESEHATAN</td>
-                            <td>memahami pola hidup sehat</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d4b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd4b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -238,54 +268,66 @@
                             <td></td>
                             <td></td>
                             <td>Pencapaian Target Belajar IT</td>
-                            <td>Menguasai teori dan praktek, nilai 90</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Pencapaian Target Belajar Kepesantrenan / Ilmu Agama Islam</td>
-                            <td>Menguasai teori dan praktek, nilai 90</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Life Skill Bahasa</td>
-                            <td>hafal 100 kosakata bhs inggris</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5c','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5c','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Koleksi Buku/Artikel Bacaan Agama</td>
-                            <td>mengkoleksi 5 artikel islam</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5d','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5d','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Koleksi Buku/Artikel Bacaan Umum</td>
-                            <td>mengkoleksi 5 artikel umum</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5e','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5e','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Wawasan Global / Pengetahuan</td>
-                            <td>Membaca dan mengetahui wawasan global tentang IT</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d5f','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd5f','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -297,9 +339,11 @@
                             <td></td>
                             <td></td>
                             <td>Melawan Hawa Nafsu</td>
-                            <td>Sabar dalam beribadah</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d6a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd6a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -311,9 +355,11 @@
                             <td></td>
                             <td></td>
                             <td>Manajemen Waktu</td>
-                            <td>Memiliki jadwal pribadi di waktu senggang</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d7a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd7a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -325,18 +371,22 @@
                             <td></td>
                             <td></td>
                             <td>KEDISIPLINAN</td>
-                            <td>Tepat waktu dalam setiap kegiatan</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d8a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd8a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>ORGANISASI SANTRI PeTIK (OSP)</td>
-                            <td>Tertanam jiwa kepemimpinan, misal bisa mempengaruhi orang lain</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d8b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd8b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -348,9 +398,11 @@
                             <td></td>
                             <td></td>
                             <td>Berjiwa Kewirausahaan</td>
-                            <td>Paham karakter pengusaha sukses</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d9a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd9a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -362,18 +414,22 @@
                             <td></td>
                             <td></td>
                             <td>MEMILIKI MANFAAT</td>
-                            <td>5 manfaat untuk PeTIK</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d10a','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd10a','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Kepedulian Sosial</td>
-                            <td>Bersihkan jalananan di RT I</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('d10b','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nd10b','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -384,9 +440,11 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td colspan="2">Memiliki 5 teman IT di Indonesia dan di dunia</td>
+                            <td colspan="2">
+                                <?= form_input('e1','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('ne1','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -398,42 +456,52 @@
                             <td></td>
                             <td></td>
                             <td>Mencoba selalu membangunkan teman untuk sholat tahajud</td>
-                            <td>Setiap Hari</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('f1','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nf1','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td>Mengisi waktu luang untuk Menghafal</td>
-                            <td>Setiap Hari</td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('f2','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
+                            <td>
+                                <?= form_input('nf2','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td colspan="2">Hafal Juz 30 Bulan September</td>
+                            <td colspan="2">
+                                <?= form_input('f3','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('nf3','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td colspan="2">Memperdalam Ilmu Kaligrafi di waktu luang</td>
+                            <td colspan="2">
+                                <?= form_input('f4','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('nf4','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td colspan="2">Menjadikan seluruh kegiatan di PeTIK sebagai sarana pendekatan diri kepada Allah dan sebagai pembentuk kepribadian saya</td>
+                            <td colspan="2">
+                                <?= form_input('f5','',['class'=>'col-xs-12','placeholder'=>'Target']) ?>
+                            </td>
                             <td>
-                                <?= form_input('','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('nf5','',['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
                             </td>
                         </tr>
                         <tr>
