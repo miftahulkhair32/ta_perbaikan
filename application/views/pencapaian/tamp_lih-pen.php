@@ -39,7 +39,7 @@
                             <td>Program Harian</td>
                             <td>Mengikuti seluruh kegiatan harian tanpa terlambat</td>
                             <td>
-                                <?= form_input('na1',$data['na1'],['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na1',$data['na1'],['class'=>'col-xs-12','readonly'=>'true']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -48,7 +48,7 @@
                             <td>Program Pekanan</td>
                             <td>Mengikuti seluruh kegiatan pekanan tanpa terlambat</td>
                             <td>
-                                <?= form_input('na2',$data['na2'],['class'=>'col-xs-12','placeholder'=>'0','onkeypress'=>'return ha(event)','rel'=>'jumlah']) ?>
+                                <?= form_input('na2',$data['na2'],['class'=>'col-xs-12','readonly'=>'true']) ?>
                             </td>
                         </tr>
                         <tr>
@@ -507,7 +507,7 @@
                         <tr>
                             <td class="center" colspan="4"><strong>TOTAL NILAI</strong></td>
                             <td>
-                                <?= form_input('total_nilai',$data['total'],['class'=>'col-xs-12','readonly'=>'true','id'=>'total']) ?>
+                                <?= form_input('total_nilai',$data['total'],['class'=>'col-xs-12','readonly'=>'true']) ?>
                             </td>
                         </tr>
                     </tbody>

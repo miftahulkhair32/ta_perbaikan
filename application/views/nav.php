@@ -141,7 +141,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?= base_url('index.php/partisipasi/edit_san') ?>">
                         <i class="menu-icon fa fa-pencil"></i>
                         Edit
                     </a>

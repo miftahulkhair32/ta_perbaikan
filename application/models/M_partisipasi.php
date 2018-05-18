@@ -82,4 +82,11 @@ class M_partisipasi extends CI_Model {
         return $this->db->delete('partisipasi');
     }
 
+    public function cek_edit(){
+        $bln    = bulan_indo(date('d-m-Y'));
+        $nm     = $this->session->userdata('id');
+        $cek    = ['bulan'=>$bln,'user'=>$nm];
+        return $this->db->get_where('partisipasi',$cek);
+    }
+
 }

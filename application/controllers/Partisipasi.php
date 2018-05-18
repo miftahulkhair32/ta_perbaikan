@@ -63,7 +63,6 @@ class Partisipasi extends CI_Controller {
     }
 
     public function proses_edit(){
-        $this->keamanan->cek_santri();
         if($this->m_partisipasi->edit() == FALSE){
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit Partisipasi <strong> GAGAL !! </strong></div>');
             redirect('partisipasi/cek');
@@ -85,6 +84,17 @@ class Partisipasi extends CI_Controller {
     }
 
     public function edit_san(){
-                
+        $r = $this->m_partisipasi->cek_edit()->num_rows();
+        if($r>0){
+            $e = $this->m_partisipasi->cek_edit()->row_array();
+            $isi['judul']       =   'Partisipasi';
+            $isi['subjudul']    =   'Edit';
+            $isi['konten']      =   'partisipasi/tamp_edi-par';
+            $isi['data']        =   $e;
+            $this->load->view('standar',$isi);
+        } else {
+            $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Anda Belum MengInput Data Partisipasi Bulan Ini </div>');
+            redirect('home');
+        }
     }
 }
