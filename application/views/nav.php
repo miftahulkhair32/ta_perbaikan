@@ -124,45 +124,105 @@
         </ul>
     </li>
     <?php else : ?>
-        <li class="">
-            <a href="<?= base_url('index.php/partisipasi') ?>">
-                <i class="menu-icon fa fa-circle"></i>
-                Partisipasi Program
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-circle-o"></i>
+                <span class="menu-text"> Partisipasi Program </span>
+                <b class="arrow fa fa-angle-down"></b>
             </a>
 
             <b class="arrow"></b>
-        </li>
 
-        <li class="">
-            <a href="<?= base_url('index.php/pencapaian') ?>">
-                <i class="menu-icon fa fa-circle"></i>
-                Pencapaian Target
+            <ul class="submenu">
+                <li>
+                    <a href="<?= base_url('index.php/partisipasi') ?>">
+                        <i class="menu-icon fa fa-pencil-square-o green"></i>
+                        Input
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon fa fa-pencil"></i>
+                        Edit
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-circle-o"></i>
+                <span class="menu-text"> Pencapaian Target </span>
+                <b class="arrow fa fa-angle-down"></b>
             </a>
 
             <b class="arrow"></b>
-        </li>
 
-        <li class="">
-            <a href="<?= base_url('index.php/hapalan'); ?>">
-                <i class="menu-icon fa fa-circle"></i>
-                Tahfizh
+            <ul class="submenu">
+                <li>
+                    <a href="<?= base_url('index.php/pencapaian') ?>">
+                        <i class="menu-icon fa fa-pencil-square-o green"></i>
+                        Input
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon fa fa-pencil"></i>
+                        Edit
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-circle-o"></i>
+                <span class="menu-text"> Tahfizh </span>
+                <b class="arrow fa fa-angle-down"></b>
             </a>
 
             <b class="arrow"></b>
-        </li>
 
-        <li class="">
-            <a href="<?= base_url('index.php/pelanggaran') ?>">
-                <i class="menu-icon fa fa-circle"></i>
-                Pelanggaran
+            <ul class="submenu">
+                <li>
+                    <a href="<?= base_url('index.php/hapalan'); ?>">
+                        <i class="menu-icon fa fa-pencil-square-o green"></i>
+                        Input
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon fa fa-pencil"></i>
+                        Edit
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-circle-o"></i>
+                <span class="menu-text"> Pelanggaran </span>
+                <b class="arrow fa fa-angle-down"></b>
             </a>
 
             <b class="arrow"></b>
-        </li>
 
+            <ul class="submenu">
+                <li>
+                    <a href="<?= base_url('index.php/pelanggaran') ?>">
+                        <i class="menu-icon fa fa-pencil-square-o green"></i>
+                        Input
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="menu-icon fa fa-pencil"></i>
+                        Edit
+                    </a>
+                </li>
+            </ul>
+        </li>
         <li class="">
             <a href="<?= base_url('index.php/artikel') ?>">
-                <i class="menu-icon fa fa-circle"></i>
+                <i class="menu-icon fa fa-circle-o"></i>
                 Artikel
             </a>
 

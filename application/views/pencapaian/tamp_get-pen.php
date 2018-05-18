@@ -52,10 +52,13 @@
                             <td class="center"><?= $da->total ?></td>
                             <td class="center">
                                 <div class="action-buttons">
-                                    <a class="green" href="<?= base_url('index.php/pencapaian/edit/'.$da->id) ?>">
+                                    <a class="" href="<?= base_url('index.php/pencapaian/lihat/'.$da->idp) ?>">
+                                        <i class="ace-icon fa fa-eye bigger-130"></i>
+                                    </a>
+                                    <a class="green" href="<?= base_url('index.php/pencapaian/edit/'.$da->idp) ?>">
                                         <i class="ace-icon fa fa-pencil bigger-130"></i>
                                     </a>
-                                    <a class="red" onclick="hapus()" href="<?= base_url('index.php/pencapaian/hapus/'.$da->id) ?>">
+                                    <a class="red" onclick="hapus()" href="<?= base_url('index.php/pencapaian/hapus/'.$da->idp) ?>">
                                         <i class="ace-icon fa fa-trash-o bigger-130"></i>
                                     </a>
                                 </div>

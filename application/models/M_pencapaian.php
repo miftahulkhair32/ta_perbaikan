@@ -98,9 +98,9 @@ class M_pencapaian extends CI_Model {
     public function get_data(){
         $dc = $this->input->post('bln');
         $ty = ['bulan'=>$dc,'status'=>'santri'];
-        $this->db->select('*');
-        $this->db->from('pencapaian');
-        $this->db->join('user','user.id = pencapaian.user','left');
+        $this->db->select('*,pencapaian.id as idp');
+        $this->db->from('user');
+        $this->db->join('pencapaian','user.id = pencapaian.user','left');
         $this->db->where($ty);
         $yu = $this->db->get();
         return $yu;

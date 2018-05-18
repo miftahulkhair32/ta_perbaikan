@@ -81,4 +81,18 @@ class Pencapaian extends CI_Controller {
             redirect('pencapaian/cek');
         }
     }
+
+    public function lihat(){
+        $this->keamanan->cek_santri();
+        $id = $this->uri->segment(3);
+        $this->db->from('user');
+        $this->db->join('pencapaian','user.id = pencapaian.user','left');
+        $this->db->where('pencapaian.id',$id);
+        $e = $this->db->get()->row_array();
+        $isi['judul']       =   'Pencapaian';
+        $isi['subjudul']    =   'Lihat';
+        $isi['konten']      =   'pencapaian/tamp_lih-pen';
+        $isi['data']        =   $e;
+        $this->load->view('standar',$isi);
+    }
 }
