@@ -228,14 +228,13 @@
 
             <b class="arrow"></b>
         </li>
+        <li>
+            <a href="<?= base_url('index.php/user/profil') ?>">
+                <i class="menu-icon fa fa-user"></i>
+                <span class="menu-text"> Profil </span>
+            </a>
+
+            <b class="arrow"></b>
+        </li>
     <?php endif; ?>
-
-    <li>
-        <a href="<?= base_url('index.php/user/profil') ?>">
-            <i class="menu-icon fa fa-user"></i>
-            <span class="menu-text"> Profil </span>
-        </a>
-
-        <b class="arrow"></b>
-    </li>
 </ul><!-- /.nav-list -->
