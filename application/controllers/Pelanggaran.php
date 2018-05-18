@@ -62,13 +62,12 @@ class Pelanggaran extends CI_Controller {
     }
 
     public function proses_edit(){
-        $this->keamanan->cek_santri();
         if($this->m_pelanggaran->edit() == FALSE){
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit Pelanggaran <strong> GAGAL !! </strong></div>');
-            redirect('pelanggaran/cek');
+            redirect('home');
         } else {
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Edit Pelanggaran <strong> SUKSES !!</strong></div>');
-            redirect('pelanggaran/cek');
+            redirect('home');
         }
     }
 
@@ -80,6 +79,21 @@ class Pelanggaran extends CI_Controller {
         } else {
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Hapus Pelanggaran <strong> SUKSES !!</strong></div>');
             redirect('pelanggaran/cek');
+        }
+    }
+
+    public function edit_san(){
+        $r = $this->m_pelanggaran->cek_edit()->num_rows();
+        if($r>0){
+            $e = $this->m_pelanggaran->cek_edit()->row_array();
+            $isi['judul']       =   'Pelanggaran';
+            $isi['subjudul']    =   'Edit';
+            $isi['konten']      =   'pelanggaran/tamp_dit-pel';
+            $isi['data']        =   $e;
+            $this->load->view('standar',$isi);
+        } else {
+            $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Anda Belum MengInput Data Pelanggaran Bulan Ini </div>');
+            redirect('home');
         }
     }
 

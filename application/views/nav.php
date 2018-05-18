@@ -213,7 +213,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?= base_url('index.php/pelanggaran/edit_san') ?>">
                         <i class="menu-icon fa fa-pencil"></i>
                         Edit
                     </a>

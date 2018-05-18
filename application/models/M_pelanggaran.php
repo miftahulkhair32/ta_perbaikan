@@ -54,4 +54,11 @@ class M_pelanggaran extends CI_Model {
         $this->db->where('id',$id);
         return $this->db->delete('pelanggaran');
     }
+
+    public function cek_edit(){
+        $bln    = bulan_indo(date('d-m-Y'));
+        $nm     = $this->session->userdata('id');
+        $cek    = ['bulan'=>$bln,'user'=>$nm];
+        return $this->db->get_where('pelanggaran',$cek);
+    }
 }
