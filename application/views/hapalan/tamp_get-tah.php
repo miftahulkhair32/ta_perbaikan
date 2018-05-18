@@ -48,16 +48,37 @@
                     <?php
                     $no=1;
                     foreach($data->result() as $da) :?>
+                    <?php
+                    if($da->tgl1 != '0000-00-00' && $da->tgl2 == '0000-00-00') {
+                        $pop='1';
+                    } elseif($da->tgl2 != '0000-00-00' && $da->tgl3 == '0000-00-00') {
+                        $pop='2';
+                    } elseif($da->tgl3 != '0000-00-00' && $da->tgl4 == '0000-00-00') {
+                        $pop='3';
+                    } elseif($da->tgl4 != '0000-00-00' && $da->tgl5 == '0000-00-00') {
+                        $pop='4';
+                    } elseif($da->tgl5 != '0000-00-00' && $da->tgl6 == '0000-00-00') {
+                        $pop='5';
+                    } elseif($da->tgl6 != '0000-00-00' && $da->tgl7 == '0000-00-00') {
+                        $pop='6';
+                    } elseif($da->tgl7 != '0000-00-00' && $da->tgl8 == '0000-00-00') {
+                        $pop='7';
+                    } elseif($da->tgl8 != '0000-00-00' && $da->tgl9 == '0000-00-00') {
+                        $pop='8';
+                    } else {
+                        $pop='9';
+                    }
+                    ?> 
                         <tr>
-                            <td rowspan="9" class="center"><?= $no ?></td>
-                            <td rowspan="9" class="center"><?= $da->nama ?></td>
+                            <td rowspan="<?= $pop ?>" class="center"><?= $no ?></td>
+                            <td rowspan="<?= $pop ?>" class="center"><?= $da->nama ?></td>
                             <?php if($da->tgl1 != '0000-00-00' && $da->salah1 != '0') : ?>
                             <td class="center"><?= $da->tgl1 ?></td>
                             <td class="center"><?= $da->salah1 ?></td>
                             <td class="center"><?= $da->tajw1 ?></td>
                             <td class="center"><?= $da->makna1 ?></td>
                             <?php endif; ?>
-                            <td rowspan="9" class="center">
+                            <td rowspan="<?= $pop ?>" class="center">
                                 <div class="action-buttons">
                                     <a class="green" href="<?= base_url('index.php/hapalan/edit/'.$da->id) ?>">
                                         <i class="ace-icon fa fa-pencil bigger-130"></i>

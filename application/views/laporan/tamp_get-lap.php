@@ -128,7 +128,9 @@
                             </a>
                         </td>
                     </tr>
-                    <?php endforeach; ?>
+                    <?php
+                    $no++;
+                    endforeach; ?>
                     </tbody>
                 </table>
             </div>

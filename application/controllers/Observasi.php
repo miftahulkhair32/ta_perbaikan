@@ -55,8 +55,10 @@ class Observasi extends CI_Controller {
     public function edit(){
         $this->keamanan->cek_santri();
         $id = $this->uri->segment(3);
-        $this->db->where('id',$id);
-        $e = $this->db->get('observasi')->row_array();
+        $this->db->from('user');
+        $this->db->join('observasi','user.id = observasi.user','left');
+        $this->db->where('observasi.id',$id);
+        $e = $this->db->get()->row_array();
         $u = $this->db->get_where('user',['status'=>'menejemen']);
         $isi['judul']       =   'Observasi';
         $isi['subjudul']    =   'Edit';

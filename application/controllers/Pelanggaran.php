@@ -50,8 +50,10 @@ class Pelanggaran extends CI_Controller {
     public function edit(){
         $this->keamanan->cek_santri();
         $id = $this->uri->segment(3);
-        $this->db->where('id',$id);
-        $e = $this->db->get('pelanggaran')->row_array();
+        $this->db->from('user');
+        $this->db->join('pelanggaran','user.id = pelanggaran.user','left');
+        $this->db->where('pelanggaran.id',$id);
+        $e = $this->db->get()->row_array();
         $isi['judul']       =   'Pelanggaran';
         $isi['subjudul']    =   'Edit';
         $isi['konten']      =   'pelanggaran/tamp_edi-pel';

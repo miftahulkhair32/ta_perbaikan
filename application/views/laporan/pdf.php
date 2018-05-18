@@ -127,6 +127,7 @@ foreach($data->result_array() as $da){
     $pdf->SetFillColor(237,94,206);
     $pdf->Cell(31,0,$da['judul'],1,0,'C',1);
     $pdf->Ln();
+    $no++;
 }
 
 ob_clean();

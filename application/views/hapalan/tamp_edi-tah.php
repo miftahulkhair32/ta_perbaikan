@@ -34,7 +34,7 @@
                                 <?= form_input('kesalahan1',$data['salah1'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i1']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran1',$data['lancar1'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i1']) ?>
+                                <?= form_input('kelancaran1',$data['tajw1'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i1']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna1',$data['makna1'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i1']) ?>
@@ -51,7 +51,7 @@
                                 <?= form_input('kesalahan2',$data['salah2'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i2']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran2',$data['lancar2'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i2']) ?>
+                                <?= form_input('kelancaran2',$data['tajw2'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i2']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna2',$data['makna2'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i2']) ?>
@@ -68,7 +68,7 @@
                                 <?= form_input('kesalahan3',$data['salah3'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i3']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran3',$data['lancar3'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i3']) ?>
+                                <?= form_input('kelancaran3',$data['tajw3'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i3']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna3',$data['makna3'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i3']) ?>
@@ -85,7 +85,7 @@
                                 <?= form_input('kesalahan4',$data['salah4'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i4']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran4',$data['lancar4'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i4']) ?>
+                                <?= form_input('kelancaran4',$data['tajw4'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i4']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna4',$data['makna4'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i4']) ?>
@@ -102,7 +102,7 @@
                                 <?= form_input('kesalahan5',$data['salah5'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i5']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran5',$data['lancar5'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i5']) ?>
+                                <?= form_input('kelancaran5',$data['tajw5'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i5']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna5',$data['makna5'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i5']) ?>
@@ -119,7 +119,7 @@
                                 <?= form_input('kesalahan6',$data['salah6'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i6']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran6',$data['lancar6'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i6']) ?>
+                                <?= form_input('kelancaran6',$data['tajw6'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i6']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna6',$data['makna6'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i6']) ?>
@@ -136,7 +136,7 @@
                                 <?= form_input('kesalahan7',$data['salah7'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i7']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran7',$data['lancar7'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i7']) ?>
+                                <?= form_input('kelancaran7',$data['tajw7'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i7']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna7',$data['makna7'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i7']) ?>
@@ -153,7 +153,7 @@
                                 <?= form_input('kesalahan8',$data['salah8'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i8']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran8',$data['lancar8'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i8']) ?>
+                                <?= form_input('kelancaran8',$data['tajw8'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i8']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna8',$data['makna8'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i8']) ?>
@@ -170,7 +170,7 @@
                                 <?= form_input('kesalahan9',$data['salah9'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i9']) ?>
                             </td>
                             <td class="center">
-                                <?= form_input('kelancaran9',$data['lancar9'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i9']) ?>
+                                <?= form_input('kelancaran9',$data['tajw9'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i9']) ?>
                             </td>
                             <td class="center">
                                 <?= form_input('makna9',$data['makna9'],['class'=>'input-mini','onkeypress'=>'return ha(event)','rel'=>'i9']) ?>

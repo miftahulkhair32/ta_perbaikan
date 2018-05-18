@@ -49,8 +49,10 @@ class Hapalan extends CI_Controller {
     public function edit(){
         $this->keamanan->cek_santri();
         $id = $this->uri->segment(3);
-        $this->db->where('id',$id);
-        $e = $this->db->get('tahfizh')->row_array();
+        $this->db->from('user');
+        $this->db->join('tahfizh','user.id = tahfizh.user','left');
+        $this->db->where('tahfizh.id',$id);
+        $e = $this->db->get()->row_array();
         $isi['judul']       =   'Tahfizh';
         $isi['subjudul']    =   'Edit';
         $isi['konten']      =   'hapalan/tamp_edi-tah';

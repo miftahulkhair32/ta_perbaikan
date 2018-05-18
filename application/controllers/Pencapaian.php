@@ -51,8 +51,10 @@ class Pencapaian extends CI_Controller {
     public function edit(){
         $this->keamanan->cek_santri();
         $id = $this->uri->segment(3);
-        $this->db->where('id',$id);
-        $e = $this->db->get('pencapaian')->row_array();
+        $this->db->from('user');
+        $this->db->join('pencapaian','user.id = pencapaian.user','left');
+        $this->db->where('pencapaian.id',$id);
+        $e = $this->db->get()->row_array();
         $isi['judul']       =   'Pencapaian';
         $isi['subjudul']    =   'Edit';
         $isi['konten']      =   'pencapaian/tamp_edi-pen';

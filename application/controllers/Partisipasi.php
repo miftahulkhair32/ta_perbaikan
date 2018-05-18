@@ -51,8 +51,10 @@ class Partisipasi extends CI_Controller {
     public function edit(){
         $this->keamanan->cek_santri();
         $id = $this->uri->segment(3);
-        $this->db->where('id',$id);
-        $e = $this->db->get('partisipasi')->row_array();
+        $this->db->from('user');
+        $this->db->join('partisipasi','user.id = partisipasi.user','left');
+        $this->db->where('partisipasi.id',$id);
+        $e = $this->db->get()->row_array();
         $isi['judul']       =   'Partisipasi';
         $isi['subjudul']    =   'Edit';
         $isi['konten']      =   'partisipasi/tamp_edi-par';
@@ -80,5 +82,9 @@ class Partisipasi extends CI_Controller {
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Hapus Partisipasi <strong> SUKSES !!</strong></div>');
             redirect('partisipasi/cek');
         }
+    }
+
+    public function edit_san(){
+                
     }
 }
