@@ -165,7 +165,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?= base_url('index.php/pencapaian/edit_san') ?>">
                         <i class="menu-icon fa fa-pencil"></i>
                         Edit
                     </a>
@@ -189,7 +189,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?= base_url('index.php/hapalan/edit_san'); ?>">
                         <i class="menu-icon fa fa-pencil"></i>
                         Edit
                     </a>

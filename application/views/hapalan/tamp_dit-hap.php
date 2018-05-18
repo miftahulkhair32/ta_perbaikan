@@ -6,12 +6,6 @@
             echo $info;
         } ?>
         <div class="clearfix"></div>
-        <div class="table-header">
-            <div class="col-xs-3">
-                <strong>Nama</strong> : <?= $data['nama'] ?>
-            </div> 
-            <strong>Bulan</strong> : <?= $data['bulan'] ?>
-        </div>
         <div class="row">
             <div class="col-xs-12">
                 <table class="table table-bordered table-hover">

@@ -63,10 +63,10 @@ class Hapalan extends CI_Controller {
     public function proses_edit(){
         if($this->m_hapalan->edit()){
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Edit Tahfizh <strong> SUKSES !!</strong></div>');
-            redirect('hapalan/cek');
+            redirect('home');
         } else {
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit Tahfizh <strong> GAGAL !! </strong> </div>');
-            redirect('hapalan/cek');
+            redirect('home');
         } 
     }
 
@@ -81,5 +81,20 @@ class Hapalan extends CI_Controller {
         }
     }
 
+
+    public function edit_san(){
+        $r = $this->m_hapalan->cek_edit()->num_rows();
+        if($r>0){
+            $e = $this->m_hapalan->cek_edit()->row_array();
+            $isi['judul']       =   'Tahfizh';
+            $isi['subjudul']    =   'Edit';
+            $isi['konten']      =   'hapalan/tamp_dit-hap';
+            $isi['data']        =   $e;
+            $this->load->view('standar',$isi);
+        } else {
+            $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Anda Belum MengInput Data Tahfizh Bulan Ini </div>');
+            redirect('home');
+        }
+    }
 
 }

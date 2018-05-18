@@ -65,10 +65,10 @@ class Partisipasi extends CI_Controller {
     public function proses_edit(){
         if($this->m_partisipasi->edit() == FALSE){
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit Partisipasi <strong> GAGAL !! </strong></div>');
-            redirect('partisipasi/cek');
+            redirect('home');
         } else {
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Edit Partisipasi <strong> SUKSES !!</strong></div>');
-            redirect('partisipasi/cek');
+            redirect('home');
         }
     }
 
@@ -89,7 +89,7 @@ class Partisipasi extends CI_Controller {
             $e = $this->m_partisipasi->cek_edit()->row_array();
             $isi['judul']       =   'Partisipasi';
             $isi['subjudul']    =   'Edit';
-            $isi['konten']      =   'partisipasi/tamp_edi-par';
+            $isi['konten']      =   'partisipasi/tamp_dit-par';
             $isi['data']        =   $e;
             $this->load->view('standar',$isi);
         } else {

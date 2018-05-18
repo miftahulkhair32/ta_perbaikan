@@ -63,13 +63,12 @@ class Pencapaian extends CI_Controller {
     }
 
     public function proses_edit(){
-        $this->keamanan->cek_santri();
         if($this->m_pencapaian->edit() == FALSE){
             $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Edit Pencapaian <strong> GAGAL !! </strong></div>');
-            redirect('pencapaian/cek');
+            redirect('home');
         } else {
             $this->session->set_flashdata('info','<div class="alert alert-block alert-success"><i class="ace icon fa fa-check"></i> Edit Pencapaian <strong> SUKSES !!</strong></div>');
-            redirect('pencapaian/cek');
+            redirect('home');
         }
     }
 
@@ -96,5 +95,20 @@ class Pencapaian extends CI_Controller {
         $isi['konten']      =   'pencapaian/tamp_lih-pen';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
+    }
+
+    public function edit_san(){
+        $r = $this->m_pencapaian->cek_edit()->num_rows();
+        if($r>0){
+            $e = $this->m_pencapaian->cek_edit()->row_array();
+            $isi['judul']       =   'Pencapaian';
+            $isi['subjudul']    =   'Edit';
+            $isi['konten']      =   'pencapaian/tamp_dit-pen';
+            $isi['data']        =   $e;
+            $this->load->view('standar',$isi);
+        } else {
+            $this->session->set_flashdata('info','<div class="alert alert-danger"><i class="ace icon fa fa-times"></i> Anda Belum MengInput Data Pencapaian Bulan Ini </div>');
+            redirect('home');
+        }
     }
 }
