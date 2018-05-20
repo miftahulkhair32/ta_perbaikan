@@ -167,7 +167,7 @@
 						<ul class="breadcrumb">
 							<li>
 								<i class="ace-icon fa fa-home home-icon"></i>
-								<a href="#"><?= $judul; ?></a>
+								<?= $judul; ?>
 							</li>
 							<li class="active"><?= $subjudul; ?></li>
 						</ul><!-- /.breadcrumb -->

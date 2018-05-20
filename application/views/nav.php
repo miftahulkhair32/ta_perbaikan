@@ -228,7 +228,7 @@
 
             <b class="arrow"></b>
         </li>
-        <li class="<?php if($subjudul=='Profil'){echo 'active';} ?>">
+        <li class="<?php if($judul=='User'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/user/profil') ?>">
                 <i class="menu-icon fa fa-user"></i>
                 <span class="menu-text"> Profil </span>
