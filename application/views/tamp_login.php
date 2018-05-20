@@ -49,7 +49,7 @@
 									<span class="red">Form Terpadu</span>
 									<span class="white" id="id-text2">MahaSantri PeTIK</span>
 								</h1>
-								<h4 class="blue" id="id-company-text">&copy; PeTIK 2018 - 2019</h4>
+								<h4 class="blue" id="id-company-text">&copy; PeTIK 2017 - 2018</h4>
 							</div>
 
 							<div class="space-6"></div>
@@ -107,7 +107,7 @@
 
 										<div class="toolbar clearfix">
 											<div class="col-xs-3 center">
-												<span class="bigger-110 center">&copy; PeTIK 2018 - 2019</span>
+												<span class="bigger-110 center">&copy; PeTIK 2017 - 2018</span>
 											</div>
 										</div>
 									</div><!-- /.widget-body -->

@@ -203,7 +203,7 @@
 					<div class="footer-content">
 						<span class="bigger-120">
 							<span class="blue bolder">Form Terpadu</span>
-							MahaSantri PeTIK &copy; 2018-2019
+							MahaSantri PeTIK &copy; 2017-2018
 						</span>
 					</div>
 				</div>
