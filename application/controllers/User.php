@@ -123,8 +123,8 @@ class User extends CI_Controller {
     public function cek_daftar(){
         $this->keamanan->cek_login();
         $this->keamanan->cek_santri();
-        $isi['judul']       =   'Daftar';
-        $isi['subjudul']    =   'User';
+        $isi['judul']       =   'User';
+        $isi['subjudul']    =   'Daftar';
         $isi['konten']      =   'user/tamp_cek-daftar';
         $isi['santri']      =   $this->m_user->get_santri();
         $isi['menej']       =   $this->m_user->get_menej();
@@ -217,8 +217,8 @@ class User extends CI_Controller {
         $user = $this->uri->segment(3);
         $this->db->where('username',$user);
         $e = $this->db->get('user')->row_array();
-        $isi['judul']       =   'Edit';
-        $isi['subjudul']    =   'User';
+        $isi['judul']       =   'User';
+        $isi['subjudul']    =   'Edit';
         $isi['konten']      =   'user/tamp_edi-men';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
