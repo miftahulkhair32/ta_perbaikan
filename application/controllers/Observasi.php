@@ -60,8 +60,8 @@ class Observasi extends CI_Controller {
         $this->db->where('observasi.id',$id);
         $e = $this->db->get()->row_array();
         $u = $this->db->get_where('user',['status'=>'menejemen']);
-        $isi['judul']       =   'Observasi';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'Observasi';
         $isi['konten']      =   'observasi/tamp_edi-obs';
         $isi['data']        =   $e;
         $isi['username']    =   $u;

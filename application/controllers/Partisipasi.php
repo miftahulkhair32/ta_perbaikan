@@ -55,8 +55,8 @@ class Partisipasi extends CI_Controller {
         $this->db->join('partisipasi','user.id = partisipasi.user','left');
         $this->db->where('partisipasi.id',$id);
         $e = $this->db->get()->row_array();
-        $isi['judul']       =   'Partisipasi';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'Partisipasi';
         $isi['konten']      =   'partisipasi/tamp_edi-par';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
@@ -87,8 +87,8 @@ class Partisipasi extends CI_Controller {
         $r = $this->m_partisipasi->cek_edit()->num_rows();
         if($r>0){
             $e = $this->m_partisipasi->cek_edit()->row_array();
-            $isi['judul']       =   'Partisipasi';
-            $isi['subjudul']    =   'Edit';
+            $isi['judul']       =   'Edit';
+            $isi['subjudul']    =   'Partisipasi';
             $isi['konten']      =   'partisipasi/tamp_dit-par';
             $isi['data']        =   $e;
             $this->load->view('standar',$isi);

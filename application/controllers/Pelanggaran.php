@@ -54,8 +54,8 @@ class Pelanggaran extends CI_Controller {
         $this->db->join('pelanggaran','user.id = pelanggaran.user','left');
         $this->db->where('pelanggaran.id',$id);
         $e = $this->db->get()->row_array();
-        $isi['judul']       =   'Pelanggaran';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'Pelanggaran';
         $isi['konten']      =   'pelanggaran/tamp_edi-pel';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
@@ -86,8 +86,8 @@ class Pelanggaran extends CI_Controller {
         $r = $this->m_pelanggaran->cek_edit()->num_rows();
         if($r>0){
             $e = $this->m_pelanggaran->cek_edit()->row_array();
-            $isi['judul']       =   'Pelanggaran';
-            $isi['subjudul']    =   'Edit';
+            $isi['judul']       =   'Edit';
+            $isi['subjudul']    =   'Pelanggaran';
             $isi['konten']      =   'pelanggaran/tamp_dit-pel';
             $isi['data']        =   $e;
             $this->load->view('standar',$isi);

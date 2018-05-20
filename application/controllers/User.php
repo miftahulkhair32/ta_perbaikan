@@ -21,8 +21,8 @@ class User extends CI_Controller {
     public function daftar(){
         $this->keamanan->cek_login();
         $this->keamanan->cek_santri();
-        $isi['judul']       =   'Tambah';
-        $isi['subjudul']    =   'User';
+        $isi['judul']       =   'User';
+        $isi['subjudul']    =   'Daftar';
         $isi['konten']      =   'tamp_daftar';
         $this->load->view('standar',$isi);
     }
@@ -217,8 +217,8 @@ class User extends CI_Controller {
         $user = $this->uri->segment(3);
         $this->db->where('username',$user);
         $e = $this->db->get('user')->row_array();
-        $isi['judul']       =   'User';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'User';
         $isi['konten']      =   'user/tamp_edi-men';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);

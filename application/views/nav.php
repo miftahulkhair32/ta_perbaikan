@@ -1,5 +1,5 @@
 <ul class="nav nav-list">
-    <li class="active">
+    <li class="<?php if($judul=='Home'){echo 'active';} ?>">
         <a href="<?= base_url('index.php/home') ?>">
             <i class="menu-icon fa fa-tachometer"></i>
             <span class="menu-text"> Home </span>
@@ -9,7 +9,7 @@
     </li>
 
     <?php if($this->session->userdata('status')=='menejemen') : ?>
-        <li class="">
+        <li class="<?php if($judul=='Laporan'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/laporan'); ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Laporan Utama
@@ -17,7 +17,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Pelanggaran'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/pelanggaran/cek') ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Pelanggaran
@@ -26,7 +26,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Partisipasi'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/partisipasi/cek') ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Partisipasi
@@ -35,7 +35,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Pencapaian'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/pencapaian/cek') ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Pencapaian
@@ -44,7 +44,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Artikel'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/artikel/cek') ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Artikel
@@ -53,7 +53,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Tahfizh'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/hapalan/cek') ?>">
                 <i class="menu-icon fa fa-book"></i>
                 Tahfizh
@@ -62,7 +62,7 @@
             <b class="arrow"></b>
         </li>
 
-        <li class="">
+        <li class="<?php if($subjudul=='Observasi'){echo 'active';} ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-inbox"></i>
                 Observasi
@@ -92,7 +92,7 @@
             </ul>
         </li>
     
-    <li>
+    <li class="<?php if($judul=='User'){echo 'active';} ?>">
         <a href="#" class="dropdown-toggle">
             <i class="menu-icon fa fa-users"></i>
             <span class="menu-text"> User </span>
@@ -124,7 +124,7 @@
         </ul>
     </li>
     <?php else : ?>
-        <li>
+        <li class="<?php if($subjudul=='Partisipasi'){echo 'active';} ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-circle-o"></i>
                 <span class="menu-text"> Partisipasi Program </span>
@@ -148,7 +148,7 @@
                 </li>
             </ul>
         </li>
-        <li>
+        <li class="<?php if($subjudul=='Pencapaian'){echo 'active';} ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-circle-o"></i>
                 <span class="menu-text"> Pencapaian Target </span>
@@ -172,7 +172,7 @@
                 </li>
             </ul>
         </li>
-        <li>
+        <li class="<?php if($subjudul=='Tahfizh'){echo 'active';} ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-circle-o"></i>
                 <span class="menu-text"> Tahfizh </span>
@@ -196,7 +196,7 @@
                 </li>
             </ul>
         </li>
-        <li>
+        <li class="<?php if($subjudul=='Pelanggaran'){echo 'active';} ?>">
             <a href="#" class="dropdown-toggle">
                 <i class="menu-icon fa fa-circle-o"></i>
                 <span class="menu-text"> Pelanggaran </span>
@@ -220,7 +220,7 @@
                 </li>
             </ul>
         </li>
-        <li class="">
+        <li class="<?php if($subjudul=='Artikel'){echo 'active';} ?>">
             <a href="<?= base_url('index.php/artikel') ?>">
                 <i class="menu-icon fa fa-circle-o"></i>
                 Artikel

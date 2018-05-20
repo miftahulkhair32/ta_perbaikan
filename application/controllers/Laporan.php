@@ -21,8 +21,8 @@ class Laporan extends CI_Controller {
 
     public function get(){
         $this->keamanan->cek_santri();
-        $isi['judul']       =   'From';
-        $isi['subjudul']    =   'Laporan';
+        $isi['judul']       =   'Laporan';
+        $isi['subjudul']    =   'Form';
         $isi['konten']      =   'laporan/tamp_get-lap';
         $isi['mene']        =   $this->m_laporan->menej();
         $isi['data']        =   $this->m_laporan->get();

@@ -53,8 +53,8 @@ class Hapalan extends CI_Controller {
         $this->db->join('tahfizh','user.id = tahfizh.user','left');
         $this->db->where('tahfizh.id',$id);
         $e = $this->db->get()->row_array();
-        $isi['judul']       =   'Tahfizh';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'Tahfizh';
         $isi['konten']      =   'hapalan/tamp_edi-tah';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);

@@ -40,7 +40,7 @@
                             <th class="center">Nama</th>
                             <th class="center">Jenis Pelanggaran</th>
                             <th class="center">Jumlah Point</th>
-                            <th class="center">Keterangan</th>
+                            <th class="center">Keterangan (Sebab Pelanggaran)</th>
                             <th class="center">Aksi</th>
                         </tr>
                     </thead>

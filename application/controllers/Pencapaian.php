@@ -14,7 +14,7 @@ class Pencapaian extends CI_Controller {
 	public function index(){
         $isi = [
             'judul'     => 'Form',
-            'subjudul'  => 'Pencapaian Target Santri',
+            'subjudul'  => 'Pencapaian',
             'konten'    => 'pencapaian/tamp_inp-pen',
             'bulan'     =>  bulan_indo(date('d-m-Y', time()-60*60*24*5))
         ];
@@ -55,8 +55,8 @@ class Pencapaian extends CI_Controller {
         $this->db->join('pencapaian','user.id = pencapaian.user','left');
         $this->db->where('pencapaian.id',$id);
         $e = $this->db->get()->row_array();
-        $isi['judul']       =   'Pencapaian';
-        $isi['subjudul']    =   'Edit';
+        $isi['judul']       =   'Edit';
+        $isi['subjudul']    =   'Pencapaian';
         $isi['konten']      =   'pencapaian/tamp_edi-pen';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
@@ -90,8 +90,8 @@ class Pencapaian extends CI_Controller {
         $this->db->join('pencapaian','user.id = pencapaian.user','left');
         $this->db->where('pencapaian.id',$id);
         $e = $this->db->get()->row_array();
-        $isi['judul']       =   'Pencapaian';
-        $isi['subjudul']    =   'Lihat';
+        $isi['judul']       =   'Lihat';
+        $isi['subjudul']    =   'Pencapaian';
         $isi['konten']      =   'pencapaian/tamp_lih-pen';
         $isi['data']        =   $e;
         $this->load->view('standar',$isi);
@@ -101,8 +101,8 @@ class Pencapaian extends CI_Controller {
         $r = $this->m_pencapaian->cek_edit()->num_rows();
         if($r>0){
             $e = $this->m_pencapaian->cek_edit()->row_array();
-            $isi['judul']       =   'Pencapaian';
-            $isi['subjudul']    =   'Edit';
+            $isi['judul']       =   'Edit';
+            $isi['subjudul']    =   'Pencapaian';
             $isi['konten']      =   'pencapaian/tamp_dit-pen';
             $isi['data']        =   $e;
             $this->load->view('standar',$isi);
