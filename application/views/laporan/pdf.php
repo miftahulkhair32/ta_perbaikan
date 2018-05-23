@@ -27,7 +27,7 @@ $m--;
 $no=1;
 $y1=5;
 $y2=9;
-for($i=0;$i<70;$i++){
+
 foreach($data->result_array() as $da){
     if($no==1 || $no%25==0){
         if($no==1){
@@ -140,7 +140,7 @@ foreach($data->result_array() as $da){
     $pdf->Ln();
     $no++;
 }
-}
+
 
 ob_clean();
 $pdf->Output('Laporan.pdf','I');
