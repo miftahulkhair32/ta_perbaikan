@@ -86,8 +86,8 @@ class Hapalan extends CI_Controller {
         $r = $this->m_hapalan->cek_edit()->num_rows();
         if($r>0){
             $e = $this->m_hapalan->cek_edit()->row_array();
-            $isi['judul']       =   'Tahfizh';
-            $isi['subjudul']    =   'Edit';
+            $isi['judul']       =   'Edit';
+            $isi['subjudul']    =   'Tahfizh';
             $isi['konten']      =   'hapalan/tamp_dit-hap';
             $isi['data']        =   $e;
             $this->load->view('standar',$isi);
